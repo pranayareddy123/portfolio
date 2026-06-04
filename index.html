@@ -373,42 +373,27 @@
     </div>
 
     <!-- Contact Info -->
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>
-          Email:
-          <a href="mailto:pranayakomatireddy457@gmail.com">
-            pranayakomatireddy457@gmail.com
-          </a>
-        </p>
-        <p class="contact-links">
-          <a href="https://www.linkedin.com/in/pranaya-komatireddy-6976b3261/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/pranayareddy123" target="_blank">GitHub</a>
-        </p>
-      </div>
-    </section>
+   <section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
 
-    <!-- Contact Form -->
-    <section id="contact-form">
-      <div class="container">
-        <h2>Contact</h2>
+    <p>
+      Email:
+      <a href="mailto:pranayakomatireddy457@gmail.com">
+        pranayakomatireddy457@gmail.com
+      </a>
+    </p>
 
-        <form id="contactForm" class="glass-card" action="contact.php" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-        <p id="formMsg"></p>
-      </div>
-    </section>
+    <p class="contact-links">
+      <a href="https://www.linkedin.com/in/pranaya-komatireddy-6976b3261/" target="_blank">
+        LinkedIn
+      </a>
+      <a href="https://github.com/pranayareddy123" target="_blank">
+        GitHub
+      </a>
+    </p>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -417,19 +402,6 @@
 
   </main>
 
-  <!-- JS file -->
-  <script src="script.js"></script>
 
-  <script>
-    // Show a small success message if redirected with ?status=success
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("status") === "success") {
-      const msg = document.getElementById("formMsg");
-      if (msg) {
-        msg.textContent = "Thank you! Your message has been sent.";
-        msg.style.color = "#a5b4fc";
-      }
-    }
-  </script>
 </body>
 </html>
